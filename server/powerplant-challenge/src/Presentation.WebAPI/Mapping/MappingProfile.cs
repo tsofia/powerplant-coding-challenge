@@ -9,6 +9,8 @@ namespace Presentation.WebAPI.Mapping
         public MappingProfile() {
             CreateMap<ProductionPlanViewModel, ProductionPlan>().ReverseMap();
             CreateMap<PowerplantOutputPowerViewModel, PowerplantOutputPower>().ReverseMap();
+            CreateMap<FuelsViewModel, Fuels>().ReverseMap();
+            CreateMap<PowerplantViewModel, Powerplant>().ReverseMap();
         }
     }
 }

@@ -46,7 +46,7 @@ namespace Presentation.WebAPI.Middleware
         {
             var apiError = new ApiError(); // Defaults to a 500 HTTP Status code
 
-            if (e is InvalidParametersException)
+            if (e is InsufficientPowerException)
             {
                 apiError.Status = (int) HttpStatusCode.BadRequest;
                 apiError.Description = HttpStatusCode.BadRequest.ToString();
